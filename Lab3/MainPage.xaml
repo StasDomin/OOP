@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DormitoryJsonManager.MainPage"
+             Title="Диспетчер JSON — Гуртожиток"
+             BackgroundColor="#1E1E1E">
+
+    <Grid RowDefinitions="Auto,Auto,Auto,Auto,*" Padding="16" RowSpacing="12">
+
+        <FlexLayout Grid.Row="0" Wrap="Wrap" JustifyContent="Start" AlignItems="Center">
+            <Button Text="Відкрити JSON" Clicked="OnOpenJsonClicked"
+                    BackgroundColor="#1976D2" TextColor="White" CornerRadius="6" Margin="0,0,8,6" />
+            <Button Text="Додати" Clicked="OnAddClicked"
+                    BackgroundColor="#2E7D32" TextColor="White" CornerRadius="6" Margin="0,0,8,6" />
+            <Button Text="Редагувати" Clicked="OnEditClicked"
+                    BackgroundColor="#00838F" TextColor="White" CornerRadius="6" Margin="0,0,8,6" />
+            <Button Text="Видалити" Clicked="OnDeleteClicked"
+                    BackgroundColor="#C62828" TextColor="White" CornerRadius="6" Margin="0,0,8,6" />
+            <Button Text="Зберегти" Clicked="OnSaveClicked"
+                    BackgroundColor="#5E35B1" TextColor="White" CornerRadius="6" Margin="0,0,8,6" />
+            <Button Text="Зберегти як..." Clicked="OnSaveAsClicked"
+                    BackgroundColor="#4527A0" TextColor="White" CornerRadius="6" Margin="0,0,8,6" />
+            <Button Text="Clear" Clicked="OnClearClicked"
+                    BackgroundColor="#EF6C00" TextColor="White" CornerRadius="6" Margin="0,0,8,6" />
+            <Button Text="Про програму" Clicked="OnAboutClicked"
+                    BackgroundColor="#424242" TextColor="White" CornerRadius="6" Margin="0,0,8,6" />
+            <Button Text="Вихід" Clicked="OnExitClicked"
+                    BackgroundColor="#B71C1C" TextColor="White" CornerRadius="6" Margin="0,0,0,6" />
+        </FlexLayout>
+
+        <HorizontalStackLayout Grid.Row="1" Spacing="16">
+            <Label x:Name="ActiveFileLabel"
+                   Text="Активний файл: не вибрано (натисніть «Відкрити JSON»)"
+                   TextColor="#4FC3F7"
+                   FontSize="14" />
+            <Label x:Name="DormitoryNameLabel"
+                   Text=""
+                   TextColor="#A5D6A7"
+                   FontSize="14"
+                   FontAttributes="Bold" />
+        </HorizontalStackLayout>
+
+        <Border Grid.Row="2" BackgroundColor="#252526" Stroke="#3E3E42" StrokeThickness="1" StrokeShape="RoundRectangle 8" Padding="12">
+            <Grid ColumnDefinitions="1.2*,1.4*,0.8*,2*,Auto" ColumnSpacing="10">
+                <VerticalStackLayout Grid.Column="0" Spacing="4">
+                    <Label Text="Факультет (LINQ):" TextColor="#CCCCCC" FontSize="12" />
+                    <Picker x:Name="FacultyPicker" SelectedIndexChanged="OnFilterChanged"
+                            BackgroundColor="#333337" TextColor="White" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="1" Spacing="4">
+                    <Label Text="Кафедра (LINQ):" TextColor="#CCCCCC" FontSize="12" />
+                    <Picker x:Name="DepartmentPicker" SelectedIndexChanged="OnFilterChanged"
+                            BackgroundColor="#333337" TextColor="White" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="2" Spacing="4">
+                    <Label Text="Курс (LINQ):" TextColor="#CCCCCC" FontSize="12" />
+                    <Picker x:Name="CoursePicker" SelectedIndexChanged="OnFilterChanged"
+                            BackgroundColor="#333337" TextColor="White" />
+                </VerticalStackLayout>
+
+                <VerticalStackLayout Grid.Column="3" Spacing="4">
+                    <Label Text="Ключове слово (П.І.П., кімната, пільга):" TextColor="#CCCCCC" FontSize="12" />
+                    <Entry x:Name="KeywordEntry"
+                           Placeholder="Введіть текст для пошуку..."
+                           TextChanged="OnKeywordChanged"
+                           BackgroundColor="#333337"
+                           TextColor="White"
+                           PlaceholderColor="#888888" />
+                </VerticalStackLayout>
+
+                <Button Grid.Column="4"
+                        Text="Пошук"
+                        Clicked="OnSearchClicked"
+                        VerticalOptions="End"
+                        BackgroundColor="#2E7D32"
+                        TextColor="White"
+                        CornerRadius="6" />
+            </Grid>
+        </Border>
+
+        <Label x:Name="StatusCountLabel"
+               Grid.Row="3"
+               Text="Знайдено записів: 0"
+               TextColor="#E0E0E0"
+               FontSize="14"
+               FontAttributes="Bold" />
+
+        <Border Grid.Row="4" Stroke="#3E3E42" StrokeThickness="1" BackgroundColor="#252526">
+            <Grid RowDefinitions="Auto,*">
+                <Grid Grid.Row="0"
+                      ColumnDefinitions="2.2*,0.9*,1.6*,0.6*,1.3*,1.6*,0.9*,1.2*"
+                      BackgroundColor="#333337"
+                      Padding="10,8"
+                      ColumnSpacing="8">
+                    <Label Grid.Column="0" Text="П.І.П. мешканця" FontAttributes="Bold" TextColor="#4FC3F7" />
+                    <Label Grid.Column="1" Text="Факультет" FontAttributes="Bold" TextColor="#4FC3F7" />
+                    <Label Grid.Column="2" Text="Кафедра" FontAttributes="Bold" TextColor="#4FC3F7" />
+                    <Label Grid.Column="3" Text="Курс" FontAttributes="Bold" TextColor="#4FC3F7" />
+                    <Label Grid.Column="4" Text="Проживання" FontAttributes="Bold" TextColor="#4FC3F7" />
+                    <Label Grid.Column="5" Text="Період" FontAttributes="Bold" TextColor="#4FC3F7" />
+                    <Label Grid.Column="6" Text="Пільга" FontAttributes="Bold" TextColor="#4FC3F7" />
+                    <Label Grid.Column="7" Text="Телефон" FontAttributes="Bold" TextColor="#4FC3F7" />
+                </Grid>
+
+                <CollectionView x:Name="ResidentsCollectionView" Grid.Row="1">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="2.2*,0.9*,1.6*,0.6*,1.3*,1.6*,0.9*,1.2*"
+                                  Padding="10,9"
+                                  ColumnSpacing="8"
+                                  BackgroundColor="{Binding RowBackground}">
+                                <Grid.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnRowTapped" CommandParameter="{Binding .}" />
+                                </Grid.GestureRecognizers>
+
+                                <Label Grid.Column="0" Text="{Binding Item.FullName}" TextColor="White" FontAttributes="Bold" />
+                                <Label Grid.Column="1" Text="{Binding Item.Faculty}" TextColor="#E0E0E0" />
+                                <Label Grid.Column="2" Text="{Binding Item.Department}" TextColor="#E0E0E0" />
+                                <Label Grid.Column="3" Text="{Binding Item.Course}" TextColor="#E0E0E0" />
+                                <Label Grid.Column="4" Text="{Binding Item.Accommodation.LocationDisplay}" TextColor="#A5D6A7" />
+                                <Label Grid.Column="5" Text="{Binding Item.Accommodation.PeriodDisplay}" TextColor="#CCCCCC" FontSize="12" />
+                                <Label Grid.Column="6" Text="{Binding Item.BenefitDisplay}" TextColor="#FFD54F" />
+                                <Label Grid.Column="7" Text="{Binding Item.PhoneDisplay}" TextColor="#B0BEC5" FontSize="12" />
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </Grid>
+        </Border>
+
+    </Grid>
+</ContentPage>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DormitoryJsonManager.Views.AboutPage"
+             Title="Про програму"
+             BackgroundColor="#1E1E1E">
+
+    <VerticalStackLayout Padding="30" Spacing="16" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="520">
+        <Border BackgroundColor="#2A2A2A" Stroke="#3E3E42" StrokeThickness="1" StrokeShape="RoundRectangle 12" Padding="24">
+            <VerticalStackLayout Spacing="12">
+                <Label Text="Диспетчер JSON — ІС «Гуртожиток»"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#FFFFFF" />
+
+                <BoxView HeightRequest="1" Color="#3E3E42" />
+
+                <Label Text="Виконав: Студент ФКНК КНУ імені Тараса Шевченка Дьомін Станіслав Сергійович"
+                       FontSize="15"
+                       TextColor="#E0E0E0" />
+                <Label Text="Курс: 2 | Група: К-26"
+                       FontSize="15"
+                       TextColor="#E0E0E0" />
+                <Label Text="Рік розробки: 2026"
+                       FontSize="15"
+                       TextColor="#4FC3F7" />
+
+                <BoxView HeightRequest="1" Color="#3E3E42" />
+
+                <Label Text="Короткий опис:"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       TextColor="#FFFFFF" />
+                <Label Text="Програма призначена для відкриття, перегляду у вигляді таблиці , редагування, додавання, видалення, LINQ-фільтрації та збереження даних про мешканців гуртожитку у форматі JSON."
+                       FontSize="14"
+                       TextColor="#CCCCCC"
+                       LineBreakMode="WordWrap" />
+
+                <Button Text="Закрити"
+                        Clicked="OnCloseClicked"
+                        BackgroundColor="#1976D2"
+                        TextColor="White"
+                        CornerRadius="8"
+                        Margin="0,12,0,0" />
+            </VerticalStackLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>

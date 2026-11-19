@@ -1,0 +1,89 @@
+{
+  "DormitoryName": "Студентський гуртожиток \u21167 КНУ",
+  "Residents": [
+    {
+      "FullName": "Кондратенко Ярослав Андрійович",
+      "Faculty": "ФКНК",
+      "Department": "Інформатики",
+      "Course": 2,
+      "Benefit": "ВПО",
+      "Phone": "\u002B380673421190",
+      "Accommodation": {
+        "Building": "Корпус А",
+        "Room": "305",
+        "CheckInDate": "2025-09-01",
+        "CheckOutDate": "2026-06-30"
+      }
+    },
+    {
+      "FullName": "Юхта Матвій Віталійович",
+      "Faculty": "ФІТ",
+      "Department": "Програмної інженерії",
+      "Course": 3,
+      "Benefit": null,
+      "Phone": "\u002B380508147721",
+      "Accommodation": {
+        "Building": "Корпус Б",
+        "Room": "418",
+        "CheckInDate": "2024-09-01",
+        "CheckOutDate": "2026-06-30"
+      }
+    },
+    {
+      "FullName": "Дьомін Станіслав Сергійович",
+      "Faculty": "ФКНК",
+      "Department": "Обчислювальної математики",
+      "Course": 2,
+      "Benefit": null,
+      "Phone": null,
+      "Accommodation": {
+        "Building": "Корпус А",
+        "Room": "305",
+        "CheckInDate": "2025-09-01",
+        "CheckOutDate": "2026-06-30"
+      }
+    },
+    {
+      "FullName": "Левітіна Юліанна Віталіївна",
+      "Faculty": "МЕФ",
+      "Department": "Фінансів",
+      "Course": 1,
+      "Benefit": "Сирота",
+      "Phone": "\u002B380935560912",
+      "Accommodation": {
+        "Building": "Корпус Б",
+        "Room": "214",
+        "CheckInDate": "2026-09-01",
+        "CheckOutDate": "2027-06-30"
+      }
+    },
+    {
+      "FullName": "Черненко Іван Олегович",
+      "Faculty": "ФРЕКС",
+      "Department": "Кібербезпеки",
+      "Course": 4,
+      "Benefit": "УБД",
+      "Phone": null,
+      "Accommodation": {
+        "Building": "Корпус А",
+        "Room": "510",
+        "CheckInDate": "2023-09-01",
+        "CheckOutDate": "2026-06-30"
+      }
+    },
+    {
+      "FullName": "Мозольов Роман Олегович",
+      "Faculty": "ФКНК",
+      "Department": "Інформатики",
+      "Course": 2,
+      "Benefit": null,
+      "Phone": null,
+      "Accommodation": {
+        "Building": "Корпус Б",
+        "Room": "112",
+        "CheckInDate": "2025-09-01",
+        "CheckOutDate": "2026-06-30"
+      }
+    }
+  ]
+}

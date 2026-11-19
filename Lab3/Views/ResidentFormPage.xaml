@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DormitoryJsonManager.Views.ResidentFormPage"
+             Title="Дані мешканця"
+             BackgroundColor="#1E1E1E">
+
+    <ScrollView Padding="24">
+        <VerticalStackLayout Spacing="12" MaximumWidthRequest="600" HorizontalOptions="Center">
+            <Label x:Name="FormTitleLabel"
+                   Text="Додавання нового мешканця"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   Margin="0,0,0,8" />
+
+            <Label Text="П.І.П. студента *" TextColor="#CCCCCC" FontSize="13" />
+            <Entry x:Name="FullNameEntry" Placeholder="Наприклад: Іваненко Іван Іванович"
+                   BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                <VerticalStackLayout Grid.Column="0" Spacing="6">
+                    <Label Text="Факультет *" TextColor="#CCCCCC" FontSize="13" />
+                    <Entry x:Name="FacultyEntry" Placeholder="ФКНК"
+                           BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1" Spacing="6">
+                    <Label Text="Курс (1-6) *" TextColor="#CCCCCC" FontSize="13" />
+                    <Entry x:Name="CourseEntry" Keyboard="Numeric" Placeholder="2"
+                           BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <Label Text="Кафедра *" TextColor="#CCCCCC" FontSize="13" />
+            <Entry x:Name="DepartmentEntry" Placeholder="Інформатики"
+                   BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                <VerticalStackLayout Grid.Column="0" Spacing="6">
+                    <Label Text="Корпус *" TextColor="#CCCCCC" FontSize="13" />
+                    <Entry x:Name="BuildingEntry" Placeholder="Корпус А"
+                           BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1" Spacing="6">
+                    <Label Text="Кімната *" TextColor="#CCCCCC" FontSize="13" />
+                    <Entry x:Name="RoomEntry" Placeholder="305"
+                           BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                <VerticalStackLayout Grid.Column="0" Spacing="6">
+                    <Label Text="Дата поселення (РРРР-ММ-ДД)" TextColor="#CCCCCC" FontSize="13" />
+                    <Entry x:Name="CheckInEntry" Placeholder="2025-09-01"
+                           BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1" Spacing="6">
+                    <Label Text="Дата виселення (РРРР-ММ-ДД)" TextColor="#CCCCCC" FontSize="13" />
+                    <Entry x:Name="CheckOutEntry" Placeholder="2026-06-30"
+                           BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="12">
+                <VerticalStackLayout Grid.Column="0" Spacing="6">
+                    <Label Text="Пільга (необов'язково)" TextColor="#CCCCCC" FontSize="13" />
+                    <Entry x:Name="BenefitEntry" Placeholder="ВПО / Сирота / УБД"
+                           BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1" Spacing="6">
+                    <Label Text="Телефон (необов'язково)" TextColor="#CCCCCC" FontSize="13" />
+                    <Entry x:Name="PhoneEntry" Placeholder="+380..."
+                           BackgroundColor="#2A2A2A" TextColor="White" PlaceholderColor="#777777" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <HorizontalStackLayout Spacing="12" HorizontalOptions="End" Margin="0,16,0,0">
+                <Button Text="Скасувати"
+                        Clicked="OnCancelClicked"
+                        BackgroundColor="#555555"
+                        TextColor="White"
+                        CornerRadius="8"
+                        WidthRequest="120" />
+                <Button Text="Зберегти"
+                        Clicked="OnSaveClicked"
+                        BackgroundColor="#2E7D32"
+                        TextColor="White"
+                        CornerRadius="8"
+                        WidthRequest="120" />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
