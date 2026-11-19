@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Task5.Models"
+             x:Class="Task5.MainPage"
+             Title="Каталог товарів">
+
+    <Grid RowDefinitions="Auto, Auto, *, Auto"
+          Padding="20"
+          RowSpacing="12">
+
+        <!-- Заголовок -->
+        <Label Grid.Row="0"
+               Text="Перелік товарів (Продукти та Книги)"
+               FontSize="22"
+               FontAttributes="Bold" />
+
+        <!-- Шапка таблиці (Grid) -->
+        <Border Grid.Row="1"
+                BackgroundColor="#2B3A55"
+                Padding="10,8"
+                StrokeShape="RoundRectangle 6">
+            <Grid ColumnDefinitions="1.5*, 1*, 1*, 1.2*, 1.2*, 3*"
+                  ColumnSpacing="8">
+                <Label Grid.Column="0" Text="Назва" TextColor="White" FontAttributes="Bold" />
+                <Label Grid.Column="1" Text="Категорія" TextColor="White" FontAttributes="Bold" />
+                <Label Grid.Column="2" Text="Ціна" TextColor="White" FontAttributes="Bold" />
+                <Label Grid.Column="3" Text="Країна" TextColor="White" FontAttributes="Bold" />
+                <Label Grid.Column="4" Text="Дата пакування" TextColor="White" FontAttributes="Bold" />
+                <Label Grid.Column="5" Text="Опис та характеристики" TextColor="White" FontAttributes="Bold" />
+            </Grid>
+        </Border>
+
+        <!-- Рядки таблиці (Grid для кожного товару) -->
+        <CollectionView x:Name="ProductsCollectionView"
+                        Grid.Row="2"
+                        SelectionMode="Single">
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="6" />
+            </CollectionView.ItemsLayout>
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="models:Product">
+                    <Border Padding="10,8"
+                            Stroke="#D0D7DE"
+                            StrokeThickness="1"
+                            StrokeShape="RoundRectangle 6">
+                        <Grid ColumnDefinitions="1.5*, 1*, 1*, 1.2*, 1.2*, 3*"
+                              ColumnSpacing="8">
+                            <Label Grid.Column="0" Text="{Binding Name}" FontAttributes="Bold" VerticalOptions="Center" />
+                            <Label Grid.Column="1" Text="{Binding Category}" VerticalOptions="Center" />
+                            <Label Grid.Column="2" Text="{Binding FormattedPrice}" VerticalOptions="Center" />
+                            <Label Grid.Column="3" Text="{Binding CountryOfOrigin}" VerticalOptions="Center" />
+                            <Label Grid.Column="4" Text="{Binding FormattedPackagingDate}" VerticalOptions="Center" />
+                            <Label Grid.Column="5" Text="{Binding Details}" VerticalOptions="Center" />
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+        <!-- Дві кнопки для додавання та видалення товарів -->
+        <HorizontalStackLayout Grid.Row="3"
+                               Spacing="16"
+                               HorizontalOptions="Start">
+            <Button Text="Додати товар"
+                    BackgroundColor="#1E7E34"
+                    TextColor="White"
+                    Padding="20,10"
+                    Clicked="OnAddProductClicked" />
+
+            <Button Text="Видалити товар"
+                    BackgroundColor="#C82333"
+                    TextColor="White"
+                    Padding="20,10"
+                    Clicked="OnRemoveProductClicked" />
+        </HorizontalStackLayout>
+
+    </Grid>
+
+</ContentPage>

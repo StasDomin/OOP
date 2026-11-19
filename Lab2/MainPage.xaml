@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:DormitoryXmlLab2.Models"
+             x:Class="DormitoryXmlLab2.MainPage"
+             Title="Гуртожиток — Аналізатор XML (ЛР №2)">
+
+    <ContentPage.MenuBarItems>
+        <MenuBarItem Text="Файл">
+            <MenuFlyoutItem Text="Відкрити XML..." Clicked="OnOpenXmlClicked" />
+            <MenuFlyoutItem Text="Трансформувати в HTML" Clicked="OnTransformHtmlClicked" />
+            <MenuFlyoutSeparator />
+            <MenuFlyoutItem Text="Вихід" Clicked="OnExitClicked" />
+        </MenuBarItem>
+        <MenuBarItem Text="Дії">
+            <MenuFlyoutItem Text="Виконати пошук" Clicked="OnSearchClicked" />
+            <MenuFlyoutItem Text="Clear (Очистити)" Clicked="OnClearClicked" />
+        </MenuBarItem>
+        <MenuBarItem Text="Довідка">
+            <MenuFlyoutItem Text="Допомога користувачу" Clicked="OnHelpClicked" />
+            <MenuFlyoutItem Text="Про програму" Clicked="OnAboutClicked" />
+        </MenuBarItem>
+    </ContentPage.MenuBarItems>
+
+    <Grid RowDefinitions="Auto,Auto,Auto,*" Padding="16" RowSpacing="12">
+
+        <HorizontalStackLayout Grid.Row="0" Spacing="8">
+            <Button Text="Відкрити XML" Clicked="OnOpenXmlClicked" BackgroundColor="#1e40af" TextColor="White" />
+            <Button Text="Пошук" Clicked="OnSearchClicked" BackgroundColor="#15803d" TextColor="White" />
+            <Button Text="Clear" Clicked="OnClearClicked" BackgroundColor="#b45309" TextColor="White" />
+            <Button Text="В HTML" Clicked="OnTransformHtmlClicked" BackgroundColor="#0f766e" TextColor="White" />
+            <Button Text="Допомога" Clicked="OnHelpClicked" BackgroundColor="#475569" TextColor="White" />
+            <Button Text="Про програму" Clicked="OnAboutClicked" BackgroundColor="#475569" TextColor="White" />
+            <Button Text="Вихід" Clicked="OnExitClicked" BackgroundColor="#b91c1c" TextColor="White" />
+        </HorizontalStackLayout>
+
+        <Border Grid.Row="1" Stroke="{AppThemeBinding Light=#cbd5e1, Dark=#475569}" StrokeShape="RoundRectangle 8" Padding="12">
+            <VerticalStackLayout Spacing="6">
+                <Label x:Name="CurrentFileLabel"
+                       Text="Файл не обрано"
+                       FontAttributes="Bold"
+                       TextColor="{AppThemeBinding Light=#1e3a8a, Dark=#60a5fa}" />
+                <HorizontalStackLayout Spacing="20">
+                    <Label Text="Стратегія аналізу:" VerticalOptions="Center" FontAttributes="Bold" />
+                    <RadioButton x:Name="SaxRadio" Content="SAX API (XmlReader)" GroupName="StrategyGroup" IsChecked="True" CheckedChanged="OnStrategyChanged" />
+                    <RadioButton x:Name="DomRadio" Content="DOM API (XmlDocument)" GroupName="StrategyGroup" CheckedChanged="OnStrategyChanged" />
+                    <RadioButton x:Name="LinqRadio" Content="LINQ to XML (XDocument)" GroupName="StrategyGroup" CheckedChanged="OnStrategyChanged" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Border>
+
+        <Border Grid.Row="2" Stroke="{AppThemeBinding Light=#cbd5e1, Dark=#475569}" StrokeShape="RoundRectangle 8" Padding="12">
+            <Grid ColumnDefinitions="*,*,*,2*" ColumnSpacing="12">
+                <VerticalStackLayout Grid.Column="0" Spacing="4">
+                    <Label Text="Факультет (з файлу):" FontSize="12" />
+                    <Picker x:Name="FacultyPicker" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="1" Spacing="4">
+                    <Label Text="Кафедра (з файлу):" FontSize="12" />
+                    <Picker x:Name="DepartmentPicker" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="2" Spacing="4">
+                    <Label Text="Курс (з файлу):" FontSize="12" />
+                    <Picker x:Name="CoursePicker" />
+                </VerticalStackLayout>
+                <VerticalStackLayout Grid.Column="3" Spacing="4">
+                    <Label Text="Ключове слово (П.І.П., кімната, пільга...):" FontSize="12" />
+                    <Entry x:Name="KeywordEntry" Placeholder="Введіть текст для пошуку..." />
+                </VerticalStackLayout>
+            </Grid>
+        </Border>
+
+        <Grid Grid.Row="3" RowDefinitions="Auto,*" RowSpacing="8">
+            <Label x:Name="StatusLabel" Grid.Row="0" Text="Результати пошуку: 0" FontAttributes="Bold" />
+            <CollectionView x:Name="ResultsCollectionView" Grid.Row="1">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate x:DataType="models:ResidentRecord">
+                        <Border Stroke="{AppThemeBinding Light=#cbd5e1, Dark=#475569}" StrokeShape="RoundRectangle 8" Padding="12" Margin="0,0,0,8">
+                            <VerticalStackLayout Spacing="4">
+                                <Label Text="{Binding FullName}"
+                                       FontSize="16"
+                                       FontAttributes="Bold"
+                                       TextColor="{AppThemeBinding Light=#0f172a, Dark=#f8fafc}" />
+                                <HorizontalStackLayout Spacing="12">
+                                    <Label Text="{Binding Faculty, StringFormat='Факультет: {0}'}"
+                                           FontAttributes="Bold"
+                                           TextColor="{AppThemeBinding Light=#1e40af, Dark=#38bdf8}" />
+                                    <Label Text="{Binding Department, StringFormat='Кафедра: {0}'}" />
+                                    <Label Text="{Binding Course, StringFormat='Курс: {0}'}" />
+                                </HorizontalStackLayout>
+                                <Label Text="{Binding AccommodationSummary}"
+                                       TextColor="{AppThemeBinding Light=#334155, Dark=#cbd5e1}" />
+                                <Label Text="{Binding ExtraAttributesSummary}"
+                                       FontSize="12"
+                                       TextColor="{AppThemeBinding Light=#64748b, Dark=#94a3b8}" />
+                            </VerticalStackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </Grid>
+
+    </Grid>
+</ContentPage>

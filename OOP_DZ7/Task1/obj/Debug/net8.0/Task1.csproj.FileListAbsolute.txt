@@ -1,0 +1,14 @@
+/Users/adriy/Desktop/OOP_DZ7/Task1/bin/Debug/net8.0/Task1
+/Users/adriy/Desktop/OOP_DZ7/Task1/bin/Debug/net8.0/Task1.deps.json
+/Users/adriy/Desktop/OOP_DZ7/Task1/bin/Debug/net8.0/Task1.runtimeconfig.json
+/Users/adriy/Desktop/OOP_DZ7/Task1/bin/Debug/net8.0/Task1.dll
+/Users/adriy/Desktop/OOP_DZ7/Task1/bin/Debug/net8.0/Task1.pdb
+/Users/adriy/Desktop/OOP_DZ7/Task1/obj/Debug/net8.0/Task1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adriy/Desktop/OOP_DZ7/Task1/obj/Debug/net8.0/Task1.AssemblyInfoInputs.cache
+/Users/adriy/Desktop/OOP_DZ7/Task1/obj/Debug/net8.0/Task1.AssemblyInfo.cs
+/Users/adriy/Desktop/OOP_DZ7/Task1/obj/Debug/net8.0/Task1.csproj.CoreCompileInputs.cache
+/Users/adriy/Desktop/OOP_DZ7/Task1/obj/Debug/net8.0/Task1.dll
+/Users/adriy/Desktop/OOP_DZ7/Task1/obj/Debug/net8.0/refint/Task1.dll
+/Users/adriy/Desktop/OOP_DZ7/Task1/obj/Debug/net8.0/Task1.pdb
+/Users/adriy/Desktop/OOP_DZ7/Task1/obj/Debug/net8.0/Task1.genruntimeconfig.cache
+/Users/adriy/Desktop/OOP_DZ7/Task1/obj/Debug/net8.0/ref/Task1.dll

@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/adriy/OPP/Lab2/obj/Debug/net8.0-maccatalyst/maccatalyst-x64/Entitlements.xcent /Users/adriy/OPP/Lab2/bin/Debug/net8.0-maccatalyst/maccatalyst-x64/DormitoryXmlLab2.app

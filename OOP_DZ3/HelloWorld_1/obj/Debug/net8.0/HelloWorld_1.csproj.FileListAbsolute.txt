@@ -1,0 +1,14 @@
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/bin/Debug/net8.0/HelloWorld_1
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/bin/Debug/net8.0/HelloWorld_1.deps.json
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/bin/Debug/net8.0/HelloWorld_1.runtimeconfig.json
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/bin/Debug/net8.0/HelloWorld_1.dll
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/bin/Debug/net8.0/HelloWorld_1.pdb
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/obj/Debug/net8.0/HelloWorld_1.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/obj/Debug/net8.0/HelloWorld_1.AssemblyInfoInputs.cache
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/obj/Debug/net8.0/HelloWorld_1.AssemblyInfo.cs
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/obj/Debug/net8.0/HelloWorld_1.csproj.CoreCompileInputs.cache
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/obj/Debug/net8.0/HelloWorld_1.dll
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/obj/Debug/net8.0/refint/HelloWorld_1.dll
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/obj/Debug/net8.0/HelloWorld_1.pdb
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/obj/Debug/net8.0/HelloWorld_1.genruntimeconfig.cache
+/Users/adriy/Desktop/OOP_DZ3/HelloWorld_1/obj/Debug/net8.0/ref/HelloWorld_1.dll

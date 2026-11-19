@@ -1,0 +1,14 @@
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/bin/Debug/net8.0/GeoInterfaceApp
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/bin/Debug/net8.0/GeoInterfaceApp.deps.json
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/bin/Debug/net8.0/GeoInterfaceApp.runtimeconfig.json
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/bin/Debug/net8.0/GeoInterfaceApp.dll
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/bin/Debug/net8.0/GeoInterfaceApp.pdb
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/obj/Debug/net8.0/GeoInterfaceApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/obj/Debug/net8.0/GeoInterfaceApp.AssemblyInfoInputs.cache
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/obj/Debug/net8.0/GeoInterfaceApp.AssemblyInfo.cs
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/obj/Debug/net8.0/GeoInterfaceApp.csproj.CoreCompileInputs.cache
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/obj/Debug/net8.0/GeoInterfaceApp.dll
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/obj/Debug/net8.0/refint/GeoInterfaceApp.dll
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/obj/Debug/net8.0/GeoInterfaceApp.pdb
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/obj/Debug/net8.0/GeoInterfaceApp.genruntimeconfig.cache
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoInterfaceApp/obj/Debug/net8.0/ref/GeoInterfaceApp.dll

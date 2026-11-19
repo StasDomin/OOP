@@ -1,0 +1,15 @@
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/bin/Debug/net8.0/books.json
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/bin/Debug/net8.0/JsonTask
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/bin/Debug/net8.0/JsonTask.deps.json
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/bin/Debug/net8.0/JsonTask.runtimeconfig.json
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/bin/Debug/net8.0/JsonTask.dll
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/bin/Debug/net8.0/JsonTask.pdb
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/obj/Debug/net8.0/JsonTask.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/obj/Debug/net8.0/JsonTask.AssemblyInfoInputs.cache
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/obj/Debug/net8.0/JsonTask.AssemblyInfo.cs
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/obj/Debug/net8.0/JsonTask.csproj.CoreCompileInputs.cache
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/obj/Debug/net8.0/JsonTask.dll
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/obj/Debug/net8.0/refint/JsonTask.dll
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/obj/Debug/net8.0/JsonTask.pdb
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/obj/Debug/net8.0/JsonTask.genruntimeconfig.cache
+/Users/adriy/Desktop/OOP_DZ6/JsonTask/obj/Debug/net8.0/ref/JsonTask.dll

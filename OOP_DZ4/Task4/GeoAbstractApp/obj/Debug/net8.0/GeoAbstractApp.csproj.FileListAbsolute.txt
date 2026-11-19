@@ -1,0 +1,14 @@
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/bin/Debug/net8.0/GeoAbstractApp
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/bin/Debug/net8.0/GeoAbstractApp.deps.json
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/bin/Debug/net8.0/GeoAbstractApp.runtimeconfig.json
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/bin/Debug/net8.0/GeoAbstractApp.dll
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/bin/Debug/net8.0/GeoAbstractApp.pdb
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/obj/Debug/net8.0/GeoAbstractApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/obj/Debug/net8.0/GeoAbstractApp.AssemblyInfoInputs.cache
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/obj/Debug/net8.0/GeoAbstractApp.AssemblyInfo.cs
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/obj/Debug/net8.0/GeoAbstractApp.csproj.CoreCompileInputs.cache
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/obj/Debug/net8.0/GeoAbstractApp.dll
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/obj/Debug/net8.0/refint/GeoAbstractApp.dll
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/obj/Debug/net8.0/GeoAbstractApp.pdb
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/obj/Debug/net8.0/GeoAbstractApp.genruntimeconfig.cache
+/Users/adriy/Desktop/OOP_DZ4/Task4/GeoAbstractApp/obj/Debug/net8.0/ref/GeoAbstractApp.dll

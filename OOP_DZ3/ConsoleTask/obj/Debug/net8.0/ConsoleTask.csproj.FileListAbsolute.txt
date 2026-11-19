@@ -1,0 +1,14 @@
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/bin/Debug/net8.0/ConsoleTask
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/bin/Debug/net8.0/ConsoleTask.deps.json
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/bin/Debug/net8.0/ConsoleTask.runtimeconfig.json
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/bin/Debug/net8.0/ConsoleTask.dll
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/bin/Debug/net8.0/ConsoleTask.pdb
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/obj/Debug/net8.0/ConsoleTask.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/obj/Debug/net8.0/ConsoleTask.AssemblyInfoInputs.cache
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/obj/Debug/net8.0/ConsoleTask.AssemblyInfo.cs
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/obj/Debug/net8.0/ConsoleTask.csproj.CoreCompileInputs.cache
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/obj/Debug/net8.0/ConsoleTask.dll
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/obj/Debug/net8.0/refint/ConsoleTask.dll
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/obj/Debug/net8.0/ConsoleTask.pdb
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/obj/Debug/net8.0/ConsoleTask.genruntimeconfig.cache
+/Users/adriy/Desktop/OOP_DZ3/ConsoleTask/obj/Debug/net8.0/ref/ConsoleTask.dll
